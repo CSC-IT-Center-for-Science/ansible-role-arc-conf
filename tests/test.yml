@@ -1,5 +1,19 @@
 ---
-- hosts: localhost
-  remote_user: root
-  roles:
-    - ansible-role-arc-conf
+
+ - hosts: localhost
+   remote_user: root
+   vars:
+   arc_conf_settings: |
+       [nordugridmap]
+       gridmap_permissions="644"
+       log_to_file="yes"
+       logfile="/var/log/nordugridmap.log"
+       [vo]
+       id="vo_cms"
+       vo="cms"
+       source="vomss://voms2.cern.ch:8443/voms/cms"
+       mapped_unixid="cmsuser"
+       require_issuerdn="no"
+
+   roles:
+     - ansible-role-arc-conf
