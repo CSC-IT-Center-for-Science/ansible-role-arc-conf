@@ -1,6 +1,15 @@
+# This file is managed by Ansible
 # http://manpages.ubuntu.com/manpages/trusty/en/man5/arc.conf.5.html
+
+{% if arc_conf_settings is defined %}
+{% for setting in arc_conf_settings %}
+{{ setting }}
+{% else %}
+
 [nordugridmap]
 gridmap_permissions="644"
+log_to_file="yes"
+logfile="/var/log/nordugridmap.log"
 [vo]
 id="vo_cms"
 vo="cms"
@@ -35,3 +44,5 @@ vo="ops"
 source="vomss://voms.ndgf.org:8443/voms/ops.ndgf.org"
 mapped_unixid="lcgops"
 require_issuerdn="no"
+
+{% endif %}
