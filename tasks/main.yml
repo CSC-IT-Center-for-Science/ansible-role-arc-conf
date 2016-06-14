@@ -1,5 +1,5 @@
 ---
 # tasks file for ansible-role-arc-conf
-- name: copy in arc.conf for nordugridmap
+- name: template in arc.conf for nordugridmap
   template: src=arc.conf.j2 dest=/etc/arc.conf owner=root group=root mode=0644
 
