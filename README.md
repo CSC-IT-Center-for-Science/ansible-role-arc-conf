@@ -14,6 +14,10 @@ Requirements
 Role Variables
 --------------
 
+It is possible to define your own settings in arc.conf completely.
+
+See defaults/main.yml for examples.
+
 
 Dependencies
 ------------

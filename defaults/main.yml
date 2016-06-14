@@ -1,14 +1,16 @@
 ---
 # defaults file for ansible-role-arc-conf
 
-# arc_conf_settings: |
-# [nordugridmap]
-# gridmap_permissions="644"
-# log_to_file="yes"
-# logfile="/var/log/nordugridmap.log"
-# [vo]
-# id="vo_cms"
-# vo="cms"
-# source="vomss://voms2.cern.ch:8443/voms/cms"
-# mapped_unixid="cmsuser"
-# require_issuerdn="no"
+# define like below to customize your own settings in arc.conf
+#arc_conf_settings: |
+#  [nordugridmap]
+#  gridmap_permissions="644"
+#  log_to_file="yes"
+#  logfile="/var/log/nordugridmap.log"
+#  [vo]
+#  id="vo_cms"
+#  vo="cms"
+#  source="vomss://voms2.cern.ch:8443/voms/cms"
+#  mapped_unixid="cmsuser"
+#  require_issuerdn="no"
+#
