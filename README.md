@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/CSC-IT-Center-for-Science/ansible-role-arc-conf.svg?branch=master)](https://travis-ci.org/CSC-IT-Center-for-Science/ansible-role-arc-conf)
+
 ansible-role-arc-conf
 =========
 
@@ -11,6 +13,10 @@ Requirements
 
 Role Variables
 --------------
+
+It is possible to define your own settings in arc.conf completely.
+
+See defaults/main.yml for examples.
 
 
 Dependencies
