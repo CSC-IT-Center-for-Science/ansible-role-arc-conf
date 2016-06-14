@@ -3,7 +3,7 @@
  - hosts: localhost
    remote_user: root
    vars:
-   arc_conf_settings: |
+     - arc_conf_settings: |
        [nordugridmap]
        gridmap_permissions="644"
        log_to_file="yes"
